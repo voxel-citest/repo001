@@ -1,0 +1,15 @@
+pipeline {
+    agent {
+        label 'Any'
+    }
+    environment {
+        GREETINGS = 'Hello'
+    }
+    stages {
+        stage ('Test') {
+				echo "Test"
+				echo ${env.GREETINGS}
+            }
+        }
+    }
+}
