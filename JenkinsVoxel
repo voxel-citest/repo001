@@ -2,14 +2,14 @@ pipeline {
 	agent{ 
 		label "Linux-Infra"
 	}
-    environment {
+	environment {
 		GREETINGS = "Hello Jenkins!"
-    }
-    stages{
+	}
+	stages{
 		stage("Test"){
 			steps{
 				echo "Testing"
-            }
+			}
 		}
 		stage("Greetings"){
 			steps{
