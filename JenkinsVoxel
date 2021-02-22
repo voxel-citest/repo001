@@ -1,9 +1,10 @@
 #!/usr/bin/env groovy
+
 @Library('voxel-citest/jsl')_
 
 pipeline {
 	agent{ 
-		label "Linux-Infra"
+		label "Windows-Procliance"
 	}
 	environment {
 		GREETINGS = "Hello Jenkins!"
